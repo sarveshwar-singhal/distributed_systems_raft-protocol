@@ -1,0 +1,98 @@
+h1 {
+    color: darkblue;
+    font-size: 60px;
+}
+
+body {
+    background: #dad5d5;
+    /* background: #000000; */
+}
+
+.basic{
+    background: #a4a4a4;
+    /* text-align: center; */
+}
+
+.head_class{
+    height: 5pc;
+    width: 100%;
+}
+
+.container{
+    height: 30pc;
+    border: 3px solid #fff;
+    padding: 10px;
+    background: #a4a4a4;
+    /* background-color: aqua; */
+    /* background: aqua; */
+    /* background; */
+}
+
+.childDiv{
+    display: inline-block;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    /* float: left; */
+    /* padding: 20px; */
+    /* border: 2px solid red; */
+}
+
+.submitDiv{
+    text-align: center;
+}
+
+.child{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+
+div.gfg {
+    /* margin:5px; */
+    /* padding:5px; */
+    /* background-color: green; */
+    /* width: 500px; */
+    /* height: 110px; */
+    overflow: auto;
+    text-align:justify;
+}
+
+div.scroll {
+    margin:4px, 4px;
+    padding:4px;
+    background-color: green;
+    width: 500px;
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.child1{
+    width: 40pc;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.child2{
+    width: 10pc;
+    float: right;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.left_div{
+    width: 50pc;
+    /* align-self: left; */
+    /* position: left; */
+}
+
+.right_div{
+    width: 50pc;
+    position: relative;
+    /* align-self: right; */
+    /* position: right; */
+}

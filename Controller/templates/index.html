@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat System</title>
+    <link href="{{ url_for('static',filename='css/style.css')}}" rel="stylesheet">
+</head>
+<body>
+    <div class="head_class">
+        <h1 align="center">Message System</h1>
+    </div>
+    <br/><br/><br/>
+    <div class="container">
+        <div id="left_div" class="childDiv">
+            <h2>Enter Your Text here</h2> <br>
+            <div>
+                <textarea id="text_area" placeholder="Type your message here" rows="10" cols="80"></textarea>
+            </div>
+        </div><div id="right_div" class="childDiv">
+            <h2>Messages in DB</h2> <br>
+            <!-- <div>
+                <p id="message_area">Messages from DB will appear here</p>
+            </div> -->
+            <textarea id="message_area" placeholder="Message from DB will appear here" rows="10" cols="80"></textarea>
+        </div>
+        <div >
+            <p>Last request status:</p>
+            <div id="last_request_status">
+                        
+            </div>
+        </div>
+        <div class="submitDiv">
+            <button id="saveButton" > Save</button>
+            <button id="showButton" > Show Message</button>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static',filename='js/myfile.js')}}">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

@@ -1,0 +1,99 @@
+# This is a sample docker-compose file, Please follow the naming convention for the service and container name, all node
+# names must begin with "Node" followed by their sequence number. For a three node cluster your service/container names
+# should be Node1, Node2 and Node3 as shown below(for service names they will be lowercase). You can add additional
+# parameters and configurations as required by your implementation.
+
+
+version: "3.7"
+services:
+  node1:
+    container_name: Node1
+    build: Node/.
+    command: python -u main.py
+    environment:
+      node_name: Node1
+    env_file:
+      - global.env
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.11.0.2
+    volumes:
+      - .:/usr/src
+     
+  node2:
+    container_name: Node2
+    build: Node/.
+    command: python -u main.py
+    environment:
+      node_name: Node2
+    env_file:
+      - global.env
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.11.0.3
+    volumes:
+      - .:/usr/src 
+
+  node3:
+    container_name: Node3
+    build: Node/.
+    command: python -u main.py
+    environment:
+      node_name: Node3
+    env_file:
+      - global.env
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.11.0.4
+    volumes:
+      - .:/usr/src 
+   
+  node4:
+    container_name: Node4
+    build: Node/.
+    command: python -u main.py
+    environment:
+      node_name: Node4
+    env_file:
+      - global.env
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.11.0.5
+    volumes:
+      - .:/usr/src 
+
+  node5:
+    container_name: Node5
+    build: Node/.
+    command: python -u main.py
+    environment:
+      node_name: Node5
+    env_file:
+      - global.env
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.11.0.6
+    volumes:
+      - .:/usr/src 
+
+
+   #Do not change the part below
+  
+  controller:
+    container_name: Controller
+    build: Controller/.
+    stdin_open: true
+
+
+networks:
+  customnetwork:
+    ipam:
+      config:
+        - subnet: 172.11.0.0/16
+
+
+
+
+
+
+
