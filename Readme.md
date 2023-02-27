@@ -70,3 +70,4 @@ HOW TO USE THE TEST CASE?
 >python convert_follower_node1.py
 
 Note : After starting your implementation, few seconds will be given for your system to stabilize and elect a leader before evaluation starts.
+Note: This assignment/project is part of academic course CSE586 Distributed Systems.
